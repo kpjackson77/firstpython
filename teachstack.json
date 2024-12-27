@@ -1,0 +1,53 @@
+{
+  "languages": [
+    {
+      "language": "python",
+      "testrunner": "pytest"
+    }
+  ],
+  "modules": [
+    {
+      "name": "Hello World",
+      "dir": "HelloWorld",
+      "exercises": [
+        {
+          "name": "Hello World",
+          "dir": "HelloWorld",
+          "initialFiles": ["main.py"],
+          "tests": [
+            {
+              "test": "test_hello_world",
+              "name": "Print Hello World",
+              "description": "Print the text hello world to the console"
+            }
+          ],
+          "scripts": [
+            {
+              "language": "python",
+              "script": "main.py"
+            }
+          ]
+        },
+        {
+          "name": "Next steps",
+          "dir": "Next steps",
+          "run": "python main.py",
+          "initialFiles": ["main.py", "modules/greet.py"],
+          "tests": [
+            {
+              "test": "test_greet",
+              "name": "Print Hello {name}",
+              "description": "Print Hello {name}, where name is the value passed into the greet function"
+            }
+          ],
+          "scripts": [
+            {
+              "language": "python",
+              "script": "main.py"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
